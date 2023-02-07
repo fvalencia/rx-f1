@@ -1,0 +1,11 @@
+<mat-toolbar>
+  <div style="padding-right: 30px; display: flex">
+    <img src="/assets/logo.png" style="width: 30px; padding-right: 10px" />
+    <span>Rx F1</span>
+  </div>
+  <ng-container *ngFor="let route of routes">
+    <button mat-button [ngClass]="activeRoute.includes(route.url) ? 'mat-flat-button' : ''" (click)="navigate(route.url)">
+      {{ route.name }}
+    </button>
+  </ng-container>
+</mat-toolbar>

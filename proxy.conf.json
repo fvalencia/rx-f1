@@ -1,0 +1,12 @@
+{
+  "/wiki": {
+    "target": "https://en.wikipedia.org/w/api.php",
+    "secure": false,
+    "changeOrigin": true,
+    "logLevel": "debug",
+    "pathRewrite": {"^/wiki" : ""},
+    "headers": {
+        "Connection": "keep-alive"
+    }
+  }
+}

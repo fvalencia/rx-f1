@@ -1,0 +1,8 @@
+<mat-form-field appearance="fill">
+  <mat-label>Seasons</mat-label>
+  <mat-select [formControl]="seasonControl">
+    <mat-option *ngFor="let season of seasonList" [value]="season">{{
+      season
+    }}</mat-option>
+  </mat-select>
+</mat-form-field>
