@@ -21,7 +21,7 @@ import {
 @Injectable()
 export class SeasonService {
   private url: string = 'https://ergast.com/api/f1';
-  private wikiUrl: string = '/wiki';
+  private wikiUrl: string = 'https://en.wikipedia.org/w/api.php';
   private undefinedProfileAsset = '/assets/profile.jpeg';
   private undefinedCircuitAsset = './assets/no-image.jpg';
 
