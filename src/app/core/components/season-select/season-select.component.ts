@@ -22,7 +22,7 @@ export class SeasonSelectComponent implements OnInit, OnDestroy {
   subscription = new Subscription();
 
   @Output() change = new EventEmitter<string>();
-  @Input() initialSeason: string;
+  @Input() initialSeason: string = '';
 
   constructor(private seasonService: SeasonService) {}
 

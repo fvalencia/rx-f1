@@ -56,7 +56,7 @@ export class SeasonService {
           pageSize: +response.MRData.limit,
           list: response.MRData.DriverTable.Drivers.map((d) => ({
             ...d,
-            picure: this.undefinedProfileAsset,
+            picture: this.undefinedProfileAsset,
           })),
         })),
         switchMap((page) => {

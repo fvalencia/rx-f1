@@ -26,7 +26,8 @@
     "paths": {
       "@core/*": ["./src/app/core/*"]
     },
-    "strictPropertyInitialization": false
+    "strictPropertyInitialization": false,
+    "esModuleInterop": true
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,
